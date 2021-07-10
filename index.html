@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5e87775eec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+
+    <title>COVIRESIST</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#guide">COVID-19</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#worldDataHeading">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="headerContainer" class="typewriter">
+        <h1 class="header" style="font-family: 'Stylish', sans-serif;">COVID-19 PANDEMIC</h1>
+        <p class="para" style="color: black; font-family: 'Zilla Slab', serif; background-color: rgb(145, 141, 141);">
+            CORONA HAAREGA, INDIA JEETEGA!!</p>
+        <marquee behaviour="alternate" direction="right" scrollamount="20" id="newsBox"></marquee>
+    </div>
+
+    <div class="my-0 mx-0" id="mainContainer">
+        <section class="sectionCSS" style="margin: 40px;">
+            <div class="p-5" id="guide">
+                <a href="#worldDataHeading" style="text-decoration: none; color: black;">
+                    <button id="wData" style="background-color: rgb(255, 153, 51)">
+                        <i class="fas fa-lungs-virus"></i>
+                        World Covid Data
+                    </button>
+                </a>
+                <a href="#indiaCovidHeading" style="text-decoration: none; color: black;">
+                    <button id="iData" style="background-color: rgb(255, 153, 51)">
+                        <i class="fas fa-virus"></i>
+                        India Covid Data
+                    </button>
+                </a>
+                <a href="#vaccineHeading" style="text-decoration: none; color: black;">
+                    <button id="vSlot" style="background-color: white">
+                        <i class="fas fa-syringe"></i>
+                        Vaccine Slot Finder
+                    </button>
+                </a>
+                <a href="#vaccineStatusHeading" style="text-decoration: none; color: black;">
+                    <button id="vData" style="background-color: white;">
+                        <i class="fas fa-shield-virus"></i>
+                        Vaccination Status
+                    </button>
+                </a>
+                <a href="https://www.pmcares.gov.in/en/" style="text-decoration: none; color: black;" target="blank">
+                    <button id="vData" style="background-color: rgb(19, 136, 8)">
+                        <i class="fas fa-rupee-sign"></i>
+                        Donate to save a life
+                    </button>
+                </a>
+                <a href="https://www.covid19india.org/resources" style="text-decoration: none; color: black;"
+                    target="blank">
+                    <button id="vData" style="background-color: rgb(19, 136, 8)">
+                        <i class="fas fa-hospital-symbol"></i>
+                        COVID-19 Resources
+                    </button>
+                </a>
+            </div>
+
+            <div class="mx-2 my-5 text-center" id="worldDataHeading">
+                <h1>COVID-19 CORONAVIRUS PANDEMIC</h1>
+            </div>
+
+            <div id="worldCovidData" class="my-2 mx-3">
+                <div class="card mx-2 my-2 wcd" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color: red;"><i class="fas fa-viruses"></i></h1>
+                        <h5 class="card-title" id="wConfirmed" style="color: red;"></h5>
+                        <h4 class="card-title" style="color: red;">Confirmed</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 wcd" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color: blue;"><i class="fas fa-hospital-user"></i></h1>
+                        <h5 class="card-title" id="wActive" style="color: blue;"></h5>
+                        <h4 class="card-title" style="color: blue;">Avtive</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 wcd" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color:#59da03;"><i class="fas fa-virus-slash"></i></h1>
+                        <h5 class="card-title" id="wRecovered" style="color:#66FF00;"></h5>
+                        <h4 class="card-title" style="color:#66FF00;">Recovered</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 wcd" style="width: 18rem;">
+                    <div class="card-body" style="color:rgb(189, 183, 183);">
+                        <h1><i class="fas fa-heart-broken"></i></h1>
+                        <h5 class="card-title" id="wDeceased"></h5>
+                        <h4 class="card-title">Deceased</h4>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-dark table-striped table-hover" id="covid19Table">
+                <thead>
+                    <tr>
+                        <th scope="col">Country</th>
+                        <th scope="col">Confirmed</th>
+                        <th scope="col">New Confirmed</th>
+                        <th scope="col">Active</th>
+                        <th scope="col">Recovered</th>
+                        <th scope="col">New Recovered</th>
+                        <th scope="col">Deceased</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th scope="row"><i class="fa fa-globe"></i></th>
+                    <td><i class="fas fa-viruses"></i></td>
+                    <td><i class="fas fa-head-side-virus"></i></td>
+                    <td><i class="fas fa-hospital-user"></i></td>
+                    <td><i class="fas fa-hand-holding-medical"></i></td>
+                    <td><i class="fas fa-user-nurse"></i></td>
+                    <td><i class="fa fa-heart"></i></td>
+                </tbody>
+            </table>
+
+            <div id="indiaCovidHeading" class="text-center mx-2 my-5">
+                <h1>COVID19 INDIA</h1>
+            </div>
+
+            <div id="indiaCovidData" class="my-4 mx-3">
+                <div class="card mx-2 my-2 idc" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color: red;"><i class="fas fa-viruses"></i></h1>
+                        <h5 class="card-title" id="idConfirmed" style="color: red;"></h5>
+                        <h3 class="card-title" id="iConfirmed" style="color: red;"></h3>
+                        <h4 class="card-title" style="color: red;">Confirmed</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 idc" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color: blue;"><i class="fas fa-hospital-user"></i></h1>
+                        <h3 class="card-title" id="iActive" style="color: blue;"></h3>
+                        <h4 class="card-title" style="color: blue;">Avtive</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 idc" style="width: 18rem;">
+                    <div class="card-body">
+                        <h1 style="color:#59da03;"><i class="fas fa-virus-slash"></i></h1>
+                        <h5 class="card-title" id="idRecovered" style="color: #66FF00;"></h5>
+                        <h3 class="card-title" id="iRecovered" style="color:#66FF00;"></h3>
+                        <h4 class="card-title" style="color:#66FF00;">Recovered</h4>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-2 idc" style="width: 18rem;">
+                    <div class="card-body" style="color:rgb(189, 183, 183);">
+                        <h1><i class="fas fa-heart-broken"></i></h1>
+                        <h5 class="card-title" id="idDeceased"></h5>
+                        <h3 class="card-title" id="iDeceased"></h3>
+                        <h4 class="card-title">Deceased</h4>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-dark table-striped table-hover" id="stateCovid19Table">
+                <thead>
+                    <tr>
+                        <th scope="col">State</th>
+                        <th scope="col">Confirmed</th>
+                        <th scope="col">Active</th>
+                        <th scope="col">Recovered</th>
+                        <th scope="col">Deceased</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th scope="row"><i class="fa fa-globe"></i></th>
+                    <td><i class="fas fa-viruses"></i></td>
+                    <td><i class="fas fa-hospital-user"></i></td>
+                    <td><i class="fas fa-hand-holding-medical"></i></td>
+                    <td><i class="fa fa-heart"></i></td>
+                </tbody>
+            </table>
+
+            <div id="vaccineHeading" class="text-center mx-2 my-5">
+                <h1>GET YOUR JAB SOON!</h1>
+            </div>
+
+            <div id="vaccineSlot">
+
+                <h3 class="cbs">Check Your Nearest Vaccination Center and Slots Availability</h3>
+
+                <div class="card text-center" id="inputBox" style="width: 30rem">
+                    <div class="card-body text-center">
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="Enter your PIN" id="pinValue">
+                        </div>
+                        <button id="searchByPin" onclick="checkSlotsByPin()" class="btn btn-secondary"><i
+                                class="fas fa-search-location"></i></button>
+                    </div>
+                </div>
+
+                <table class="table table-dark table-striped table-hover my-5" id="vaccineSlotTable"
+                    style="visibility:collapse">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Fee</th>
+                            <th scope="col">Vaccine</th>
+                            <th scope="col">Dose 1</th>
+                            <th scope="col">Dose 2</th>
+                            <th scope="col">Minimun Age</th>
+                            <th scope="col">Book Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th scope="row"><i class="fa fa-globe"></i></th>
+                        <td><i class="fas fa-viruses"></i></td>
+                        <td><i class="fas fa-hospital-user"></i></td>
+                        <td><i class="fas fa-hand-holding-medical"></i></td>
+                        <td><i class="fa fa-heart"></i></td>
+                        <td><i class="fa fa-heart"></i></td>
+                        <td><i class="fa fa-heart"></i></td>
+                        <td><i class="fa fa-heart"></i></td>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="vaccineStatusHeading" class="mx-2 my-5 text-center">
+                <h1>INDIA FIGHTS BACK</h1>
+            </div>
+
+            <div class="text-center mx-2 my-5" id="vaccineStatusData">
+                <div id="totalVaccinated" style="color:#0D5BE1; background-color: black;">
+                    <h2>Total Vaccine Doses Administered</h2>
+                    <h2><i class="fas fa-syringe"></i></h2>
+                    <h3 id="totalDoses"></h3>
+                </div>
+                <div id="totalTested" style="color: chocolate; background-color: black;">
+                    <h2>Total Samples Tested</h2>
+                    <h2><i class="fas fa-microscope"></i></h2>
+                    <h3 id="totalTests"></h3>
+                </div>
+            </div>
+        </section>
+
+        <div id="endSection">
+            <div id="symptoms">
+                <h1>COVID-19 SYMPTOMS</h1>
+            </div>
+            <div id="containerSymptoms">
+
+                <div class="precaution">
+                    <img src="img/fever.png" alt="Fever">
+                </div>
+                <div class="precaution">
+                    <img src="img/breath.png" alt="Cough">
+                </div>
+                <div class="precaution">
+                    <img src="img/week.png" alt="Weakness">
+                </div>
+            </div>
+
+            <div id="precautions">
+                <h1>COVID-19 PRECAUTIONS</h1>
+            </div>
+            <div id="containerPrecautions">
+                <div class="precaution">
+                    <img src="img/quarantine.png" alt="Quarantine">
+                </div>
+                <div class="precaution">
+                    <img src="img/mask.png" alt="Mask">
+                </div>
+                <div class="precaution">
+                    <img src="img/handwash.png" alt="Handwash">
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="socialMedia">
+                <span class="mx-2" style="float: left;">Get connected with me on Social networks!!</span>
+                <span class="mx-2" style="float: right;">
+                    <a href="https://instagram.com/___._.darshan._.___" target="blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.hackerrank.com/darshanagrawall1" target="blank">
+                        <i class="fab fa-hackerrank"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/darshan-agrawalla-74a688210/" target="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </span>
+
+            </div>
+            <div id="footerInfo">
+                <div id="footer-text">
+                    Coronavirus is menacing and affecting human mankind. But the virus is not as powerful as human
+                    togetherness and unity. TOGETHER WE CAN FIGHT, TOGETHER WE CAN WIN.
+                </div>
+                <div id="footer-contact">
+                    <h1>CONTACT</h1>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            darshanagrawallaabc01@gmail.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            +91 6370288563
+                        </li>
+                        <li>
+                            <i class="fas fa-home"></i>
+                            BBSR, ODISHA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyRights">
+                &#169; 2021 COVIRESIST TRACKER WEBSITE by Darshan Agrawalla
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

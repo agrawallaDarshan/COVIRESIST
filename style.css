@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+}
+
+.btnStyle{
+    background-color: #212529;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#inputBox{
+    display: block;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(#323333,#414345);
+}
+
+#inputBox input{
+    border: 2px solid black;
+}
+
+#worldCovidData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.wcd{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#worldDataHeading{
+    font-family: 'Stylish', sans-serif;
+    color: white;
+}
+
+#indiaCovidHeading{
+    font-family: 'Stylish', sans-serif;
+    color: white;
+}
+
+#vaccineHeading{
+    font-family: 'Stylish', sans-serif;
+    color: white;
+}
+
+#headerContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5px 20px;
+    margin: 10px;
+    height: 30rem;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+}
+
+.header{
+    font-size: 4rem;
+}
+
+.para{
+    font-size: 2rem;
+}
+
+#headerContainer::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('img/martin-sanchez-j2c7yf223Mk-unsplash.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.85;
+    background-attachment: fixed;
+}
+
+#vaccineSlot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 500px;
+}
+
+#indiaCovidData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#guide{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+}
+
+#guide button{
+    height: 4rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#vaccineStatusData{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#vaccineStatusData div{
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#mainContainer{
+    background-image: linear-gradient(#323333,#414345);
+    border-radius: 40px;
+}
+
+#endSection{
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#containerSymptoms{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+#containerPrecautions{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+#symptoms{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    margin: 2rem;
+}
+
+#precautions{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    margin: 2rem;
+}
+
+.precaution{
+    display: block;
+    margin: 0px auto;
+}
+
+#endSection img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.idc{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.cbs{
+    color: white;
+    font-family: 'Baloo 2', 'cursive';
+}
+
+#vaccineStatusHeading{
+    color: white;
+    font-family: 'Stylish', sans-serif;
+}
+
+#footer{
+   display: flex;
+   background-color: black;
+   color: white;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+}
+
+#footerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#copyRights{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#footer-text{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Zilla Slab', serif;
+}
+
+#footer-contact ul{
+    list-style-type: none;
+}
+
+#footer-contact{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    font-family: 'Zilla Slab', serif;
+}
+
+#socialMedia{
+    background-color: rgb(24, 23, 23);
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Zilla Slab', serif;
+}
+
+#donateButton{
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    border-radius: 2px solid black;
+    border-radius: 20px;
+}
+
+#newsBox{
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    top: 15rem;
+    right: 0rem;
+    font-size: 3rem;
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #headerContainer{
+        min-width: 830px;
+    }
+
+    nav{
+        min-width: 830px;
+    }
+
+    #mainContainer{
+        min-width: 830px;
+    }
+
+    #headerContainer::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: url('img/martin-sanchez-j2c7yf223Mk-unsplash.jpg') no-repeat center center/cover;
+        height: 100%;
+        min-width: 830px;
+        z-index: -1;
+        opacity:0.85;
+        background-attachment: fixed;
+    }
+}

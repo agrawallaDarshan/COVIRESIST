@@ -20,7 +20,7 @@ As the name suggests coviresisit which means resisting the coronavirus. This pro
 <img src = "img/Screenshot (6).png" width="400">   <img src = "img/Screenshot (124).png" width="400">
 </pre>
 
-## Key Features
+# Key Features
 1. World and India COVID-19 Dashboard.
 2. Vaccine slot finder (Search by PIN).
 3. Latest Covid-19 info and news.
@@ -28,17 +28,20 @@ As the name suggests coviresisit which means resisting the coronavirus. This pro
 5. Attractive user interface and clean UI.
 6. Organised arrangement of data.
 
-## References
+# References
 1. [API SETU](https://apisetu.gov.in/public/marketplace/api/cowin) : COVID-19 Dashboard
 2. [Cowin API](https://apisetu.gov.in/public/marketplace/api/cowin) : Vaccine slots
 3. [G-News API](https://newsapi.org/s/google-news-in-api) : COVID-19 news
 4. [Images](https://unsplash.com/) : Bg images
 
+# Hosted Link
+[COVIRESIST](https://agrawalladarshan.github.io/COVIRESIST/)
+
 # Motivation for the project
 
 Many people in the world are losing their life due to misinformation and lack of knowledge. I believe this website will guide people on how to deal with this pandemic and how to help others. They can easily get all the latest information regarding covid-19 from this website. It also helps them for booking their vaccination slot.
 
-## How our 7 Days of Web Development helped you in making this project?
+# How our 7 Days of Web Development helped you in making this project?
 
 The 7 days of web development codeathon enhances my HTML, CSS, and JAVASCRIPT knowledge. It makes me more familiar with APIs and different CSS frameworks. It helps me in making my code both qualitative and less quantitative. 
 

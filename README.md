@@ -6,6 +6,14 @@ As the name suggests coviresisit which means resisting the coronavirus. This pro
 # TECH STACK
 HTML,CSS,JAVASCRIPT
 
+# Screenshots
+## Desktop Views
+<pre>
+<img src = "img/Screenshot (2).png" width="450">   <img src = "img/Screenshot (5).png" width="450">
+
+<img src = "img/Screenshot (3).png" width="450"> 
+</pre>
+
 # Motivation for the project
 
 Many people in the world are losing their life due to misinformation and lack of knowledge. I believe this website will guide people on how to deal with this pandemic and how to help others. They can easily get all the latest information regarding covid-19 from this website. It also helps them for booking their vaccination slot.

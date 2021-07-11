@@ -11,7 +11,13 @@ HTML,CSS,JAVASCRIPT
 <pre>
 <img src = "img/Screenshot (2).png" width="450">   <img src = "img/Screenshot (5).png" width="450">
 
-<img src = "img/Screenshot (3).png" width="450"> 
+<img src = "img/Screenshot (3).png" width="450">   <img src = "img/Screenshot (123).png" width="450">
+</pre>
+
+## Responsive Designs
+
+<pre>
+<img src = "img/Screenshot (6).png" width="400">   <img src = "img/Screenshot (124).png" width="400">
 </pre>
 
 # Motivation for the project
